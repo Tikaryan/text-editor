@@ -1,1 +1,13 @@
 /target
+
+# Build
+artifacts
+simapp/simd/simd
+
+# IDE
+.idea
+*.iml
+*.ipr
+*.iws
+.dir-locals.el
+.vscode

@@ -1,7 +1,9 @@
-use std::io;
-use std::io::Read;
+
+#![warn(clippy::all, clippy::pedantic)]
+mod editor;
+
+use editor::Editor;
 fn main() {
-    for b in io::stdin().bytes() {
-        print!("{}", b.unwrap() as char);
-    }
+    let editor = Editor::new();
+    editor.run();
 }
