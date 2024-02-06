@@ -1,9 +1,10 @@
 
 #![warn(clippy::all, clippy::pedantic)]
 mod editor;
+mod terminal;
 
-use editor::Editor;
+use editor::*;
+use terminal::Terminal;
 fn main() {
-    let editor = Editor::new();
-    editor.run();
+   Editor::default().run();
 }
